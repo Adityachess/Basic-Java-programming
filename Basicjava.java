@@ -6,26 +6,15 @@ public class Basicjava {
 
 	public static void main(String[] args) {
 
-		Scanner scan = new Scanner(System.in);
+		double dividend = 43;
+		double divisor = 5;
 
-		System.out.println("Enter number ");
+		double quotient = dividend / divisor;
+		double remainder = dividend % divisor;
 
-		int num = scan.nextInt();
+		System.out.println("Quotient is equal :" + quotient);
 
-		for (int i = 2; i < num; i++) {
-
-			while (num % i == 0) {
-
-				System.out.println(i + " ");
-				num = num / i;
-
-			}
-
-			if (num > 2) {
-
-				System.out.print(num);
-			}
-		}
+		System.out.println("Remainder is equal :" + remainder);
 
 	}
 }
