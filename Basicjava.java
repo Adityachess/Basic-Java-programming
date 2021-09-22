@@ -6,17 +6,25 @@ public class Basicjava {
 
 	public static void main(String[] args) {
 
+		double sum = 0.0;
+		double a = 1.0;
+
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Enter the number");
+		System.out.println("Enter number");
 
-		int Num = sc.nextInt();
+		double Number = sc.nextDouble();
 
-		System.out.println("Printing all num till Power value :" + Num);
+		for (double i = 1; i <= Number; i++) {
 
-		for (int i = 1; i <= Num; i++) {
-			System.out.println("Power of 2^ " + i + " is: " + (Math.pow(2, i)));
+			sum += a / i;
+			
+			System.out.println(a / i);
+
 		}
+
+		System.out.println("Harmonic value is:" + sum);
+
 	}
 
 }
