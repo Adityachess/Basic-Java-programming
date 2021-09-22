@@ -7,16 +7,17 @@ public class Basicjava {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-
-		System.out.println("Enter the num to Check Even or Odd :");
-
-		int num = sc.nextInt();
-
-		if (num % 2 == 0) {
-			System.out.println("The Entered number is even");
+		System.out.println("Enter the Alphabet you want Check :");
+		
+		char ch = sc.next().charAt(0);
+		
+		
+		if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' || ch == 'i' || ch == 'I' || ch == 'o' || ch == 'O'
+				|| ch == 'u' || ch == 'U') {
+			System.out.println("Alphabet" + ch + "Is an Vowel");
 		} 
-		else {
-			System.out.println("The Entered number is odd");
-		}
+		else
+			System.out.println("Alphabet" + ch + "Is a Consonant");
+		
 	}
 }
