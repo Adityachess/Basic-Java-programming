@@ -6,20 +6,16 @@ public class Basicjava {
 
 	public static void main(String[] args) {
 
-		int year;
-
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Enter any year of your choice: ");
+		System.out.println("Enter the number");
 
-		year = sc.nextInt();
+		int Num = sc.nextInt();
 
-		if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-			System.out.println("this is leap year");
-		}
+		System.out.println("Printing all num till Power value :" + Num);
 
-		else {
-			System.out.println("this is not leap year");
+		for (int i = 1; i <= Num; i++) {
+			System.out.println("Power of 2^ " + i + " is: " + (Math.pow(2, i)));
 		}
 	}
 
