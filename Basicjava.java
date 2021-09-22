@@ -6,25 +6,26 @@ public class Basicjava {
 
 	public static void main(String[] args) {
 
-		double sum = 0.0;
-		double a = 1.0;
+		Scanner scan = new Scanner(System.in);
 
-		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter number ");
 
-		System.out.println("Enter number");
+		int num = scan.nextInt();
 
-		double Number = sc.nextDouble();
+		for (int i = 2; i < num; i++) {
 
-		for (double i = 1; i <= Number; i++) {
+			while (num % i == 0) {
 
-			sum += a / i;
-			
-			System.out.println(a / i);
+				System.out.println(i + " ");
+				num = num / i;
 
+			}
+
+			if (num > 2) {
+
+				System.out.print(num);
+			}
 		}
 
-		System.out.println("Harmonic value is:" + sum);
-
 	}
-
 }
